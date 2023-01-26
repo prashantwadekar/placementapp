@@ -56,7 +56,7 @@
                                 
                                 <ul class="nav nav-tabs" id="myTab2" role="tablist">
 
-                                    <form method="POST"  action="<?=base_url('Login/loginnow')?>">
+                                    <form method="POST"  autocomplete="off" action="<?=base_url('Login/loginnow')?>">
                                         <!--Login Candidate-->
                                         <li class="nav-item">
                                             <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#twm-login-candidate" type="button"><i class="fas fa-user-tie"></i>Candidate</button>
@@ -70,13 +70,13 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="std_username" type="text" required="" class="form-control" placeholder="Usearname*">
+                                                        <input name="std_username" type="text"  class="form-control" placeholder="Usearname*">
                                                     </div>
                                                 </div>
                                         
                                                 <div class="col-lg-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="std_password" type="text" class="form-control" required="" placeholder="Password*">
+                                                        <input name="std_password" type="text" class="form-control" placeholder="Password*">
                                                     </div>
                                                 </div>
                                         
@@ -85,7 +85,7 @@
                                                         <div class="form-group mb-3">
                                                             <div class="form-check">
                                                                 <input type="checkbox" class="form-check-input" id="Password4">
-                                                                <label class="form-check-label rem-forgot" for="Password4">Remember me <a href="javascript:;" class="site-text-primary">Forgot Password</a></label>
+                                                                <label class="form-check-label rem-forgot" for="Password4">Remember me <a href="forgetpassword" class="site-text-primary">Forgot Password</a></label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,6 +95,9 @@
                                                         <button type="submit" class="site-button">Log in</button>
                                                     </div>
                                                 </div>
+                                              <div>
+                                               <a href=<?=base_url('Createaccount')?> > Create New Account</a>
+                                              </div>
                                     </form>
                                     <?php
 						if($this->session->flashdata('error')) {	?>
@@ -110,7 +113,7 @@
                                                 <div class="form-group">
                                                     <button type="submit" class="log_with_facebook">
                                                         <i class="fab fa-facebook"></i>
-                                                        Continue with Facebook
+                                                        <a href="https://www.facebook.com/?stype=lo&jlou=AfdOxSw1zhCEe80731KXA2jVy3ouPWuMU0odUaOEA3KzWLPohJbRN4KfFa0bK2ut3772Pi2VkSoK-GxVXcXE7GX1tJgDja866eaVffDqTYn10g&smuh=52286&lh=Ac-unX1IAvA5yqayTyk">Continue with Facebook</a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -119,7 +122,7 @@
                                                 <div class="form-group">
                                                     <button type="submit" class="log_with_google">
                                                         <img src="Assets/images/google-icon.png" alt="">
-                                                        Continue with Google
+                                                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1627445831%3A1674667093678702&authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession">Continue with Google</a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -133,13 +136,13 @@
 
                                             <div class="col-lg-12">
                                                 <div class="form-group mb-3">
-                                                    <input name="username" type="text" required="" class="form-control" placeholder="Usearname*">
+                                                    <input name="username" type="text"  class="form-control" placeholder="Usearname*">
                                                 </div>
                                             </div>
                                             
                                             <div class="col-lg-12">
                                                 <div class="form-group mb-3">
-                                                    <input name="email" type="text" class="form-control" required="" placeholder="Password*">
+                                                    <input name="email" type="text" class="form-control" placeholder="Password*">
                                                 </div>
                                             </div>
                                             
@@ -148,7 +151,7 @@
                                                     <div class="form-group mb-3">
                                                         <div class="form-check">
                                                             <input type="checkbox" class="form-check-input" id="Password4">
-                                                            <label class="form-check-label rem-forgot" for="Password4">Remember me <a href="javascript:;" class="site-text-primary">Forgot Password</a></label>
+                                                            <label class="form-check-label rem-forgot" for="Password4">Remember me <a href="Forgetpassword" class="site-text-primary">Forgot Password</a></label>
                                                         </div>
                                                     </div>
                                                 </div>

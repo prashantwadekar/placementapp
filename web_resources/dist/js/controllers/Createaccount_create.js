@@ -81,7 +81,7 @@ $("#btn_save").click(function(){
              // alert("hi");
           swal({
             title:"",
-            text:"Login Successfully",
+            text:"Successfully Registered",
             type:"success",
             showCancelButton: false, 
             showConfirmButton: false,

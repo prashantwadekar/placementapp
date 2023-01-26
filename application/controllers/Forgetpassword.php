@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Forgetpassword extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
     
         
-        $this->load->model('Login_model');
+        // $this->load->model('Branch_model');
         
     }
 	
@@ -18,47 +18,46 @@ class Login extends CI_Controller {
         // echo "<pre>";
         // print_r($data);
 		//$this->load->view('common/header_view.html');
-		$this->load->view('Login/login_view');
+		$this->load->view('Forgetpassword/forgetpassword_view');
 		//$this->load->view('common/footer_view.html');
 	
 
 	}
 
-	function loginnow()
+    function forgetpassword()
 	{
 		
 		if($_SERVER['REQUEST_METHOD']=='POST')
 		{
-			$this->form_validation->set_rules('std_username','std_username','required');
-			$this->form_validation->set_rules('std_password','std_Password','required');
+			$this->form_validation->set_rules('std_email','std_email','required');
 
 			if($this->form_validation->run()==TRUE)
 			{
-				$std_username = $this->input->post('std_username');
-				$std_password = $this->input->post('std_password');
+				$std_email = $this->input->post('std_email');
+				
 
 
-				$this->load->model('Login_model');
-				$status = $this->Login_model->checkPassword($std_password,$std_username);
+				$this->load->model('Forget_model');
+				$status = $this->Forget_model->checkEmail($std_email);
 				if($status!=false)
 				{
-					$std_username = $status->std_username;
-					$std_password = $status->std_password;
+					$std_email= $status->std_email;
+				
 
 					$session_data = array(
-						'std_username'=>$std_username,
-						'std_password' => $std_password,
+						'std_email'=>$std_email,
+						
 					);
 
 					$this->session->set_userdata('UserLoginSession',$session_data);
 
-					redirect(base_url('dashboard'));
+					redirect(base_url('Resetpassword'));
 				}
 				else
 				{
 					
 					$this->session->set_flashdata('error','Usename or Password not matched');
-					redirect(base_url('login'));
+					 redirect(base_url('forgetpassword'));
 				}
 				
 
@@ -71,14 +70,7 @@ class Login extends CI_Controller {
 		}
 	}
 
-	function dashboard()
-	{
-		$this->load->view('dashboard');
-	}
 
-	function logout()
-	{
-		session_destroy();
-		redirect(base_url('login'));
-	}
+
+	
 }
