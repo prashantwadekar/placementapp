@@ -39,7 +39,7 @@
                                     <li><a href="Profile"><i class="fa fa-user"></i> My Profile</a></li>
                                     <li><a href="Myresume"><i class="fa fa-receipt"></i> My Resume</a></li>
  
-                                    <li class="active"><a href="Changepassword"><i class="fa fa-fingerprint"></i> Change Passeord</a></li>
+                                    <li class="active"><a href="Changepassword"><i class="fa fa-fingerprint"></i> Change Password</a></li>
                                     <li><a href="Chat"><i class="fa fa-comments"></i>Chat</a></li>
                                 </ul>
                             </div>
@@ -51,7 +51,7 @@
                     <div class="col-xl-9 col-lg-8 col-md-12 m-b30">
                         <!--Filter Short By-->
                         <div class="twm-right-section-panel site-bg-gray">
-                            <form>
+                            <form method="POST" autocomplete="off" action="<?=base_url('Changepassword/cp')?>">
                                 <!--Basic Information-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading wt-panel-heading p-a20">
@@ -64,7 +64,7 @@
                                                         <div class="form-group">
                                                             <label>Old Password</label>
                                                             <div class="ls-inputicon-box"> 
-                                                                <input class="form-control wt-form-control" name="company_name" type="password" placeholder="">
+                                                                <input class="form-control wt-form-control" name="old_pass" type="password" placeholder="">
                                                                 <i class="fs-input-icon fa fa-asterisk "></i>
                                                             </div>
                                                         </div>
@@ -73,7 +73,7 @@
                                                         <div class="form-group">
                                                             <label>New Password</label>
                                                             <div class="ls-inputicon-box"> 
-                                                                <input class="form-control wt-form-control" name="company_name" type="password" placeholder="">
+                                                                <input class="form-control wt-form-control" name="new_pass" type="password" placeholder="">
                                                                 <i class="fs-input-icon fa fa-asterisk"></i>
                                                             </div>
                                                         </div>
@@ -83,7 +83,7 @@
                                                         <div class="form-group">
                                                             <label>Confirm New Password</label>
                                                             <div class="ls-inputicon-box"> 
-                                                                <input class="form-control wt-form-control" name="company_name" type="password" placeholder="">
+                                                                <input class="form-control wt-form-control" name="confirm_pass" type="password" placeholder="">
                                                                 <i class="fs-input-icon fa fa-asterisk"></i>
                                                             </div>
                                                         </div>

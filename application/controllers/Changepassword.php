@@ -18,29 +18,11 @@ class Changepassword extends CI_Controller {
         // echo "<pre>";
         // print_r($data);
 		$this->load->view('common/header_view.html');
-		$this->load->view('Changepassword/changepassword_view.html');
+		$this->load->view('Changepassword/changepassword_view');
 		$this->load->view('common/footer_view.html');
 	
 
 	}
-
-
-    function insertBranch(){
-     $branch_name= $this->input->post('branch_name'); 
-   
-
-      
-      
-     
-       $fields=array('branch_name'=>$branch_name,
-                      
-                     
-                      
-             'created_date'=>date('Y-m-d H:i:s'),
-             'created_by'=>1);
-         echo json_encode($fields);
-     $this->Commonmodel->insertRecord("branch_master",$fields);
-   } 
-	
-	
+    
+        
 }

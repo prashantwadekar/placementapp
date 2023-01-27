@@ -76,7 +76,7 @@
                                         
                                                 <div class="col-lg-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="std_password" type="text" class="form-control" placeholder="Password*">
+                                                        <input name="std_password" type="password" class="form-control" placeholder="Password*">
                                                     </div>
                                                 </div>
                                         
