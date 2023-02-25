@@ -7,40 +7,20 @@ class Dashboard extends CI_Controller {
         parent::__construct();
     
         
-        // $this->load->model('Branch_model');
+        $this->load->model('job_model');
+        $this->load->database();
+            
         
     }
 	
 	
-	public function index()
-	{
-        // $data['data']=$this->Branch_model->getallBranch();
-        // echo "<pre>";
-        // print_r($data);
-		$this->load->view('common/header_view.html');
-		$this->load->view('Dashboard/dashboard_view.html');
-		$this->load->view('common/footer_view.html');
-	
-
-	}
-
-
-    function insertBranch(){
-     $branch_name= $this->input->post('branch_name'); 
-   
-
-      
-      
-     
-       $fields=array('branch_name'=>$branch_name,
-                      
-                     
-                      
-             'created_date'=>date('Y-m-d H:i:s'),
-             'created_by'=>1);
-         echo json_encode($fields);
-     $this->Commonmodel->insertRecord("branch_master",$fields);
-   } 
-	
-	
+    public function index()
+    {
+        $data['jobs'] = $this->job_model->get_openings();
+        
+        $this->load->view('common/header_view.html');
+        $this->load->view('Dashboard/dashboard_view', $data);
+        $this->load->view('common/footer_view.html');
+    }
+    
 }

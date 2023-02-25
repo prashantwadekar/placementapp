@@ -8,6 +8,8 @@ class Applyjob extends CI_Controller {
     
         
         // $this->load->model('Branch_model');
+        $this->load->model('job_model');
+        $this->load->database();
         
     }
 	
@@ -17,8 +19,10 @@ class Applyjob extends CI_Controller {
         // $data['data']=$this->Branch_model->getallBranch();
         // echo "<pre>";
         // print_r($data);
+        $data['jobs'] = $this->job_model->get_openings();
+
 		$this->load->view('common/header_view.html');
-		$this->load->view('Applyjob/applyjob_view.html');
+		$this->load->view('Applyjob/applyjob_view', $data);
 		$this->load->view('common/footer_view.html');
 	
 

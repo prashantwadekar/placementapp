@@ -1,13 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class index extends CI_Controller {
+class View_job extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
     
-        $this->load->model('job_model');
-        $this->load->database();
+        
+        // $this->load->model('Branch_model');
+        // $this->load->model('job_model');
+        // $this->load->database();
         
     }
 	
@@ -15,16 +17,17 @@ class index extends CI_Controller {
 	public function index()
 	{
         // $data['data']=$this->Branch_model->getallBranch();
-   
-        $data['jobs'] = $this->job_model->get_openings();
+        // echo "<pre>";
+        // print_r($data);
+        // $data['jobs'] = $this->job_model->get_openings();
 
 		$this->load->view('common/header_view.html');
-		$this->load->view('Home/index_view',$data);
+		$this->load->view('JobDetail/jobdetail_view');
 		$this->load->view('common/footer_view.html');
 	
 
 	}
-    
-    	
+
+	
 	
 }

@@ -29,25 +29,25 @@ class Login extends CI_Controller {
 		
 		if($_SERVER['REQUEST_METHOD']=='POST')
 		{
-			$this->form_validation->set_rules('std_username','std_username','required');
-			$this->form_validation->set_rules('std_password','std_Password','required');
+			$this->form_validation->set_rules('username','username','required');
+			$this->form_validation->set_rules('password','Password','required');
 
 			if($this->form_validation->run()==TRUE)
 			{
-				$std_username = $this->input->post('std_username');
-				$std_password = $this->input->post('std_password');
+				$username = $this->input->post('username');
+				$password = $this->input->post('password');
 
 
 				$this->load->model('Login_model');
-				$status = $this->Login_model->checkPassword($std_password,$std_username);
+				$status = $this->Login_model->checkPassword($password,$username);
 				if($status!=false)
 				{
-					$std_username = $status->std_username;
-					$std_password = $status->std_password;
+					$username = $status->username;
+					$password = $status->password;
 
 					$session_data = array(
-						'std_username'=>$std_username,
-						'std_password' => $std_password,
+						'username'=>$username,
+						'password' => $password,
 					);
 
 					$this->session->set_userdata('UserLoginSession',$session_data);

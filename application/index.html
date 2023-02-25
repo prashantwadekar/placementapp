@@ -1,11 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>403 Forbidden</title>
-</head>
-<body>
+<div class="col-lg-12 col-md-12 mb-4">
+	<div class="panel panel-default">
+		<div class="panel-heading wt-panel-heading p-a20">
+			<h4 class="panel-tittle m-a0">Recent Jobs</h4>
+		</div>
 
-<p>Directory access is forbidden.</p>
 
-</body>
-</html>
+		<?php foreach($jobs as $job): ?>
+		<div class="panel-body wt-panel-body bg-white">
+			<div class="twm-dashboard-candidates-wrap">
+				<div class="row">
+
+				<div class="col-xl-12 col-lg-12 col-md-12">
+				   <div class="twm-dash-candidates-list">
+						<div class="twm-media">
+						  <div class="twm-media-pic">
+							  <img src="Assets/images/candidates/pic1.jpg" alt="#">
+						   </div>
+						 </div>
+
+						<div class="twm-mid-content">
+						   <a href="#" class="twm-job-title">
+						   <b><?php echo $job->companyname; ?></b>
+						  </a>
+						  <br />
+						  <?php echo  $job->label_name; ?>
+					
+						<div class="twm-fot-content">
+						   <div class="twm-left-info">
+							   <p class="twm-candidate-address"><i class="feather-map-pin"></i><?php echo $job->std_branch; ?></p>
+						   <div class="twm-jobs-vacancies"><br />End Date<span></span><?php echo $job->std_dob2; ?></div>
+						</div>
+						<div class="twm-right-btn">
+						<a class="btn btn-primary" href="<?php echo $job->std_applylink; ?>" role="button">Apply Now</a>         
+						</div>
+				   </div>
+				</div>                           
+			</div>
+	   </div>
+	   <?php endforeach; ?>

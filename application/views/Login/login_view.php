@@ -70,13 +70,13 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="std_username" type="text"  class="form-control" placeholder="Usearname*">
+                                                        <input name="username" type="text"  class="form-control" placeholder="Usearname*">
                                                     </div>
                                                 </div>
                                         
                                                 <div class="col-lg-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="std_password" type="password" class="form-control" placeholder="Password*">
+                                                        <input name="password" type="password" class="form-control" placeholder="Password*">
                                                     </div>
                                                 </div>
                                         
