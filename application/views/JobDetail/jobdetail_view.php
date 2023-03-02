@@ -1,26 +1,21 @@
-
+<style>
+    .headtitle{
+        margin-top:106px;
+        margin-left:35px;
+    }
+    </style>
         <!-- CONTENT START -->
         <div class="page-content">
 
             <!-- INNER PAGE BANNER -->
-            <div class="wt-bnr-inr overlay-wraper bg-center" style="background-image:url(images/banner/1.jpg);">
-                <div class="overlay-main site-bg-white opacity-01"></div>
+            <div class="headtitle">
                 <div class="container">
                     <div class="wt-bnr-inr-entry">
                         <div class="banner-title-outer">
                             <div class="banner-title-name">
                                 <h2 class="wt-title">IT Department Manager</h2>
                             </div>
-                        </div>
-                        <!-- BREADCRUMB ROW -->                            
-                        
-                            <div>
-                                <ul class="wt-breadcrumb breadcrumb-style-2">
-                                    <li>Job Detail</li>
-                                </ul>
-                            </div>
-                        
-                        <!-- BREADCRUMB ROW END -->                        
+                        </div>                       
                     </div>
                 </div>
             </div>
@@ -29,9 +24,9 @@
 
 
             <!-- OUR BLOG START -->
-            <div class="section-full  p-t120 p-b90 bg-white">
+            <div class="section-full  bg-white">
                 <div class="container">
-                
+
                     <!-- BLOG SECTION START -->
                     <div class="section-content">
                         <div class="row d-flex justify-content-center">
@@ -78,12 +73,7 @@
                                     </div>
 
                                     <h4 class="twm-s-title">Job Description:</h4>
-
-                                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
-                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
-                                    </p>
-
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+                                    <?php echo $opening->std_description; ?>
                                       
                                     
                                     <h4 class="twm-s-title">Requirments:</h4>
@@ -92,23 +82,7 @@
                                             <i class="feather-check"></i>
                                             Must be able to communicate with others to convey information effectively.
                                         </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Personally passionate and up to date with current trends and technologies, committed to quality and comfortable working with adult media.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Rachelor or Master degree level educational background.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            4 years relevant PHP dev experience.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Troubleshooting, testing and maintaining the core product software and databases.
-                                        </li>
-
+                           
                                     </ul>
 
                                     <h4 class="twm-s-title">Responsabilities:</h4>
@@ -117,26 +91,7 @@
                                             <i class="feather-check"></i>
                                             Establish and promote design guidelines, best practices and standards.
                                         </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Accurately estimate design tickets during planning sessions.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Partnering with product and engineering to translate business and user goals into elegant and practical designs. that can deliver on key business and user metrics.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Create wireframes, storyboards, user flows, process flows and site maps to communicate interaction and design.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Present and defend designs and key deliverables to peers and executive level stakeholders.
-                                        </li>
-                                        <li>
-                                            <i class="feather-check"></i>
-                                            Execute all visual design stages from concept to final hand-off to engineering.
-                                        </li>
+                                      
 
                                     </ul>
                                   
@@ -147,140 +102,7 @@
                                         <a href="javascript:void(0)" class="link-clr">Linkedin</a>                                            
                                         <a href="javascript:void(0)" class="whats-clr">Whatsapp</a>
                                         <a href="javascript:void(0)" class="pinte-clr">Pinterest</a>
-                                    </div>
-
-                                    <h4 class="twm-s-title">Location</h4>
-                                    <div class="twm-m-map mb-5">
-                                        <div class="twm-m-map-iframe">
-                                            <iframe height="310" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8534521658976!2d-118.2533646842856!3d34.073270780600225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6fd9829c6f3%3A0x6ecd11bcf4b0c23a!2s1363%20Sunset%20Blvd%2C%20Los%20Angeles%2C%20CA%2090026%2C%20USA!5e0!3m2!1sen!2sin!4v1620815366832!5m2!1sen!2sin"></iframe>
-                                        </div>
-                                    </div>
-
-                                    <div class="twm-two-part-section">
-                                        <div class="row">
-
-                                            <div class="col-lg-6 col-md-12">
-                                                <h4 class="twm-s-title">Office Photos</h4>
-                                                <div class="tw-sidebar-gallery">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic1.jpg" title="Title 1" data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic1.jpg">
-                                                                    <img src="images/gallery/thumb/pic1.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic2.jpg" title="Title 2" data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic2.jpg">
-                                                                    <img src="images/gallery/thumb/pic2.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb ">
-                                                                <a class="elem" href="images/gallery/pic3.jpg" title="Title 3"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic3.jpg">
-                                                                    <img src="images/gallery/thumb/pic3.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic4.jpg" title="Title 4"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic4.jpg">
-                                                                    <img src="images/gallery/thumb/pic4.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic5.jpg" title="Title 5"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic5.jpg">
-                                                                    <img src="images/gallery/thumb/pic5.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic6.jpg" title="Title 6"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic6.jpg">
-                                                                    <img src="images/gallery/thumb/pic6.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic7.jpg" title="Title 7" data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic1.jpg">
-                                                                    <img src="images/gallery/thumb/pic7.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic8.jpg" title="Title 8" data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic2.jpg">
-                                                                    <img src="images/gallery/thumb/pic8.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb ">
-                                                                <a class="elem" href="images/gallery/pic9.jpg" title="Title 9"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic3.jpg">
-                                                                    <img src="images/gallery/thumb/pic9.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic10.jpg" title="Title 10"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic4.jpg">
-                                                                    <img src="images/gallery/thumb/pic10.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic11.jpg" title="Title 11"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic5.jpg">
-                                                                    <img src="images/gallery/thumb/pic11.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <div class="tw-service-gallery-thumb">
-                                                                <a class="elem" href="images/gallery/pic12.jpg" title="Title 12"  data-lcl-author="" data-lcl-thumb="images/gallery/thumb/pic6.jpg">
-                                                                    <img src="images/gallery/thumb/pic12.jpg" alt="">
-                                                                    <i class="fa fa-file-image"></i>     
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        
-                                                    </ul>
-                
-                                                </div> 
-                                            </div>
-                                           
-
-                                        </div>
-                                    </div>
-
-                                    
+                                    </div>     
                                 </div>
                             </div>
                             

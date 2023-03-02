@@ -86,16 +86,16 @@
         <div class="twm-table-controls">
             <ul class="twm-DT-controls-icon list-unstyled">
                 <li>
-                    <a href="<?php echo base_url('view_job'); ?>" role="button" class="custom-toltip">
+                    <a href="<?php echo base_url('View_job/'.$job->id); ?>" role="button" class="custom-toltip">
                         <span class="fa fa-eye"></span>
                         <span class="custom-toltip-block">View</span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="<?php echo base_url('Savedjob/delete_job/'.$job->id ); ?>" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
                         <span class="far fa-trash-alt"></span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </td>
